@@ -10,6 +10,7 @@ for item in "$@"; do
         sharecodes="\"${sharecode}\""
     else
         sharecodes="${sharecodes},\"${sharecode}\""
+    fi
     let num+=1
 done
 
