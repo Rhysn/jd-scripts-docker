@@ -1,0 +1,54 @@
+version: "2.1"
+x-logger: &logger
+  logging:
+    driver: "json-file"
+    options:
+      max-size: "10m"
+      max-file: "3"
+x-common: &common
+  image: jd-scripts:latest
+  build:
+    context: .
+    dockerfile: ./Dockerfile
+  restart: always
+services:
+  jd1:
+    <<: [*logger, *common]
+    container_name: jd1
+    volumes:
+      - ./env/all:/all
+      - ./env/env1/env:/env
+      - ./env/env1/cookies:/cookies
+      - ./logs/logs1:/logs
+  jd2:
+    <<: [*logger, *common]
+    container_name: jd2
+    volumes:
+      - ./env/all:/all
+      - ./env/env2/env:/env
+      - ./env/env2/cookies:/cookies
+      - ./logs/logs2:/logs
+  jd3:
+    <<: [*logger, *common]
+    container_name: jd3
+    volumes:
+      - ./env/all:/all
+      - ./env/env3/env:/env
+      - ./env/env3/cookies:/cookies
+      - ./logs/logs3:/logs
+  jd4:
+    <<: [*logger, *common]
+    container_name: jd4
+    volumes:
+      - ./env/all:/all
+      - ./env/env4/env:/env
+      - ./env/env4/cookies:/cookies
+      - ./logs/logs4:/logs
+  hp1:
+    <<: [*logger, *common]
+    container_name: hp1
+    volumes:
+      - ./env/all:/all
+      - ./env/hp_env1/env:/env
+      - ./env/hp_env1/cookies:/cookies
+      - ./logs/hp_logs1:/logs

@@ -1,0 +1,18 @@
+#!/bin/bash
+# https://github.com/lxk0301/scripts/blob/master/githubAction.md
+
+#推送范围开关
+JD_BEAN_SIGN_STOP_NOTIFY=true
+PET_NOTIFY_CONTROL=true
+FRUIT_NOTIFY_CONTROL=true
+JD_JOY_REWARD_NOTIFY=true
+MARKET_REWARD_NOTIFY=true
+
+#取关设置
+UN_SUBSCRIBES=
+
+# 互助码用@分割不要用&
+FRUITSHARECODES=
+PETSHARECODES=
+PLANT_BEAN_SHARECODES=
+SUPERMARKET_SHARECODES=
