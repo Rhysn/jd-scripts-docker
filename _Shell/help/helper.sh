@@ -2,13 +2,11 @@
 
 echo "#!/bin/bash" > help.sh
 
-echo "cd `dirname $0`" >> help.sh
-echo "cd ../../" >> help.sh
 
 CONTAINER_NAME="hp1"
 
 for CN in ${CONTAINER_NAME}; do
-    echo "docker-compose up --force-recreate --detach ${CN}" >> help.sh
+    echo "docker start ${CN}" >> help.sh
     echo "docker exec ${CN} bash -c 'crontab -r'" >> help.sh
     echo "docker exec ${CN} bash -c \"date > /logs/sync.log && bash /sync 1>/proc/1/fd/1 2>/proc/1/fd/2 >> /logs/sync.log\"" >> help.sh
     echo "docker exec ${CN} bash -c 'crontab -r'" >> help.sh
