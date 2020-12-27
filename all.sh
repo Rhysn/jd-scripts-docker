@@ -27,7 +27,6 @@ bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /a
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_kd.js > /logs/jd_kd.log 2>&1 | sed 's/^/ 【京东快递】/'; "
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live.js > /logs/jd_live.log 2>&1 | sed 's/^/ 【京东直播】/'; "
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jr_sign.js > /logs/jr_sign.log 2>&1 | sed 's/^/ 【金融打卡】/'; "
-bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain.js > /logs/jd_live_redrain.log 2>&1 | sed 's/^/ 【直播红包雨】/'; "
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jdh.js > /logs/jd_jdh.log 2>&1 | sed 's/^/ 【京东健康】/'; "
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jdzz.js > /logs/jd_jdzz.log 2>&1 | sed 's/^/ 【京东赚赚】/'; "
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_watch.js > /logs/jd_watch.log 2>&1 | sed 's/^/ 【京东看一看】/'; "
