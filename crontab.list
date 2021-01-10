@@ -32,4 +32,3 @@
 18 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_crazy_joy_coin.js > /logs/jd_crazy_joy_coin.log 2>&1 | sed 's/^/ 【疯狂Joy挂机】/'; "
 13 7,9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_crazy_joy.js > /logs/jd_crazy_joy.log 2>&1 | sed 's/^/ 【疯狂Joy】/';  "
 11 8 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_syj.js > /logs/jd_syj.log 2>&1 | sed 's/^/ 【十元街】/'; "
-0,9,12,18 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jxnc.js > /logs/jd_jxnc.log 2>&1 | sed 's/^/ 【十京喜农村】/'; "
