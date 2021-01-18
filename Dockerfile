@@ -5,8 +5,8 @@ RUN sed -i 's/^\(deb\|deb-src\) \([^ ]*\) \(.*\)/\1 http:\/\/mirrors.cloud.aliyu
     && echo "Asia/Shanghai" > /etc/timezone && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && service cron start 
 
-RUN git clone https://github.com/Rhysn/jd_scripts.git /scripts \
-    && git clone https://github.com/Rhysn/jd-scripts-docker.git /jd-scripts-docker
+RUN git clone https://gitee.com/Rhysn/jd_scripts.git /scripts \
+    && git clone https://gitee.com/Rhysn/jd-scripts-docker.git /jd-scripts-docker
 
 WORKDIR /
 RUN bash /jd-scripts-docker/sync.sh
