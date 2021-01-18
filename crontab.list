@@ -42,5 +42,6 @@
 30 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_gyec.js > /logs/jd_gyec.log 2>&1 | sed 's/^/ 【工业品爱消除】/'; "
 36 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_xxl.js > /logs/jd_xxl.log 2>&1 | sed 's/^/ 【京东爱消除】/'; "
 10 7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_ms.js > /logs/jd_ms.log 2>&1 | sed 's/^/ 【京东秒秒币】/'; "
+43 7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_mh.js > /logs/jd_mh.log 2>&1 | sed 's/^/ 【京东盲盒抽京豆】/'; "
 0,1 19-21/1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain2.js > /logs/jd_live_redrain2.log 2>&1 | sed 's/^/ 【直播红包雨】/'; "
 17 7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_xg.js > /logs/jd_live_xg.log 2>&1 | sed 's/^/ 【小鸽有礼】/'; "
