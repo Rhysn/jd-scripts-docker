@@ -6,7 +6,6 @@
 30 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_gyec.js > /logs/jd_gyec.log 2>&1 | sed 's/^/ 【工业品爱消除】/'; "
 36 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_xxl.js > /logs/jd_xxl.log 2>&1 | sed 's/^/ 【京东爱消除】/'; "
 13 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nianCollect.js > /logs/jd_nianCollect.log 2>&1 | sed 's/^/ 【京东炸年兽小时】/'; "
-37 */2 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nianBeast.js > /logs/jd_nianBeast.log 2>&1 | sed 's/^/ 【全民炸年兽】/'; "
 34 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jdfactory.js > /logs/jd_jdfactory.log 2>&1 | sed 's/^/ 【东东工厂】/'; "
 0 0-16/8 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_joy_reward.js > /logs/jd_joy_reward.log 2>&1 | sed 's/^/ 【宠汪汪积分兑换京豆】/'; "
 0,1 19-21/1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain2.js > /logs/jd_live_redrain2.log 2>&1 | sed 's/^/ 【直播红包雨】/'; "
@@ -54,9 +53,10 @@
 # 09:00 >>
 10 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bean_change.js > /logs/jd_bean_change.log 2>&1 | sed 's/^/ 【京豆变动通知】/'; "
 # 10:00 >>
+37 10,22 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nianBeast.js > /logs/jd_nianBeast.log 2>&1 | sed 's/^/ 【全民炸年兽】/'; "
 # 11:00 >>
 10-20/5 11 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live.js > /logs/jd_live.log 2>&1 | sed 's/^/ 【京东直播】/'; "
-37 11-21/2 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nian.js > /logs/jd_nian.log 2>&1 | sed 's/^/ 【京东炸年兽】/'; "
+37 11,23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nian.js > /logs/jd_nian.log 2>&1 | sed 's/^/ 【京东炸年兽】/'; "
 # 12:00 >>
 11 12 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nh.js > /logs/jd_nh.log 2>&1 | sed 's/^/ 【京东年货节】/'; "
 # 13:00 >>
