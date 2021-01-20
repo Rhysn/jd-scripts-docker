@@ -16,6 +16,7 @@
 0 0-10/2 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_joy_steal.js > /logs/jd_joy_steal.log 2>&1 | sed 's/^/ 【宠汪汪偷好友】/'; "
 0,1 0,9-23/2,20 3,5,20-30/1 1,2 * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain_nian.js > /logs/jd_live_redrain_nian.log 2>&1 | sed 's/^/ 【年货直播红包雨】/'; "
 0,1 0,9-23/2,20 3,5,20-30/1 1,2 * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain_offical.js > /logs/jd_live_redrain_offical.log 2>&1 | sed 's/^/ 【官方直播红包雨】/'; "
+30,31 12-23/1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain_half.js > /logs/jd_live_redrain_half.log 2>&1 | sed 's/^/ 【半点红包雨】/'; "
 # 00:00 >>
 0 0 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_blueCoin.js > /logs/jd_blueCoin.log 2>&1 | sed 's/^/ 【京小超兑换奖品】/'; "
 0 0 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_car_exchange.js > /logs/jd_car_exchange.log 2>&1 | sed 's/^/ 【京东汽车兑换】/'; "
