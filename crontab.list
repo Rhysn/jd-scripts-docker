@@ -59,6 +59,7 @@
 45 8 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nian_sign.js > /logs/jd_nian_sign.log 2>&1 | sed 's/^/ 【年兽签到】/'; "
 # 09:00 >>
 10 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bean_change.js > /logs/jd_bean_change.log 2>&1 | sed 's/^/ 【京豆变动通知】/'; "
+18 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nian_ar.js > /logs/jd_nian_ar.log 2>&1 | sed 's/^/ 【年兽AR】/'; "
 # 10:00 >>
 37 10,22 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nianBeast.js > /logs/jd_nianBeast.log 2>&1 | sed 's/^/ 【全民炸年兽】/'; "
 # 11:00 >>
