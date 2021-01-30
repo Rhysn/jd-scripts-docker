@@ -5,7 +5,7 @@ path="/home/Scripts/RulesForSurge"
 cd `dirname $0`
 bash ./get_jd_818_ShareCode.sh 3 4 1 2
 
-cp -rf jd_818.json ${path}/Scripts/JD/InviteCodes/jd_5g.json
+cp -rf jd_818.json ${path}/Scripts/JD/InviteCodes/jd_818.json
 rm -rf jd_818.json
 
 push_date=$(date)
