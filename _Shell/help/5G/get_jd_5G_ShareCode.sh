@@ -4,7 +4,7 @@ num=0
 sharecodes=""
 for item in "$@"; do
     path="../../../logs/logs${item}/jd_5g.log"
-    sharecode=$(cat ${path} | grep '您的好友助力码为：' | sed '您的好友助力码为：//g')
+    sharecode=$(cat ${path} | grep '您的好友助力码为：' | sed 's/您的好友助力码为：//g')
     if [ $num -eq 0 ]
     then
         sharecodes="\"${sharecode}\""
