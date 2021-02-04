@@ -61,7 +61,6 @@
 # 09:00 >>
 0 9-23/2,20 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nian.js > /logs/jd_nian.log 2>&1 | sed 's/^/ 【京东炸年兽】/'; "
 25 9-13/1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_newYearMoney.js > /logs/jd_newYearMoney.log 2>&1 | sed 's/^/ 【京东压岁钱】/'; "
-1 23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_newYearMoney2.js > /logs/jd_newYearMoney2.log 2>&1 | sed 's/^/ 【京东压岁钱2】/'; "
 0 9,12,16,20 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_newYearMoney_lottery.js > /logs/jd_newYearMoney_lottery.log 2>&1 | sed 's/^/ 【京东压岁钱百元卡】/'; "
 10 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bean_change.js > /logs/jd_bean_change.log 2>&1 | sed 's/^/ 【京豆变动通知】/'; "
 # 10:00 >>
