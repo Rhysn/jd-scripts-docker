@@ -51,8 +51,6 @@ bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /a
 # 11:00 >>
 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live.js > /logs/jd_live.log 2>&1 | sed 's/^/ 【京东直播】/'; "
 # 12:00 >>
-bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nh.js > /logs/jd_nh.log 2>&1 | sed 's/^/ 【京东年货节】/'; "
-bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_festival.js > /logs/jd_festival.log 2>&1 | sed 's/^/ 【手机年终奖】/'; "
 # 13:00 >>
 # 14:00 >>
 # 15:00 >>
