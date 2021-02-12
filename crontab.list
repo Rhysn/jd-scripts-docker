@@ -54,7 +54,7 @@
 3 8,16 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_cash.js > /logs/jd_cash.log 2>&1 | sed 's/^/ 【京东领现金】/'; "
 # 09:00 >>
 0 9,12,20,21 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_global.js > /logs/jd_global.log 2>&1 | sed 's/^/ 【京东国际全球挑战赛】/'; "
-0 9,12,20,21 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_global_mh.js > /logs/jd_global_mh.log 2>&1 | sed 's/^/ 【京东国际盲盒】/'; "
+0 9,12,20,21 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_gjmh.js > /logs/jd_gjmh.log 2>&1 | sed 's/^/ 【京东国际盲盒】/'; "
 10 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bean_change.js > /logs/jd_bean_change.log 2>&1 | sed 's/^/ 【京豆变动通知】/'; "
 23 9,15,18 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_xmf.js > /logs/jd_xmf.log 2>&1 | sed 's/^/ 【京东小魔方】/'; "
 # 10:00 >>
