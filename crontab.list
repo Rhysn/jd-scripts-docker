@@ -57,7 +57,6 @@
 0 9,12,20,21 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_global.js > /logs/jd_global.log 2>&1 | sed 's/^/ 【京全球挑战赛】/'; "
 # 10:00 >>
 # 11:00 >>
-10 11 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_walmart.js > /logs/jd_walmart.log 2>&1 | sed 's/^/ 【沃尔玛粉丝互动】/'; "
 45 11,12 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_entertainment.js > /logs/jd_entertainment.log 2>&1 | sed 's/^/ 【百变大咖秀】/'; "
 # 12:00 >>
 25 12 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_nzmh.js > /logs/jd_nzmh.log 2>&1 | sed 's/^/ 【女装盲盒】/'; "
