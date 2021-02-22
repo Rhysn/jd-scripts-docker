@@ -1,8 +1,0 @@
-21 11,23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_apple_live.js > /logs/jd_apple_live.log 2>&1 | sed 's/^/ 【苹果抽奖机】/'; "
-41 6 1-31 12 * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jr_sign.js > /logs/jr_sign.log 2>&1 | sed 's/^/ 【金融打卡】/'; "
-1 0,20,9-23/2 15-31 12 * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_live_redrain.js > /logs/jd_live_redrain.log 2>&1 | sed 's/^/ 【直播红包雨】/'; "
-10 8 1-31 12 * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jdh.js > /logs/jd_jdh.log 2>&1 | sed 's/^/ 【京东健康】/'; "
-31 12 1-31 12 * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_ms_redrain.js > /logs/jd_ms_redrain.log 2>&1 | sed 's/^/ 【秒杀红包雨】/'; "
-43 11,12 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_watch.js > /logs/jd_watch.log 2>&1 | sed 's/^/ 【京东看一看】/'; "
-0,9,12,18 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jxnc.js > /logs/jd_jxnc.log 2>&1 | sed 's/^/ 【京喜农厂】/'; "
-11 10 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_SC2ApiServer.js > /logs/jd_SC2ApiServer.log 2>&1 | sed 's/^/ 【提交Share Code】/'; "
