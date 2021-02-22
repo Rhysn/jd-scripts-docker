@@ -27,6 +27,7 @@
 1 0,7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_speed_redpocke.js > /logs/jd_speed_redpocke.log 2>&1 | sed 's/^/ 【京东极速版红包】/'; "
 # 01:00 >>
 1 1,4 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_redPacket.js > /logs/jd_redPacket.log 2>&1 | sed 's/^/ 【全民开红包脚本】/'; "
+3 1,4 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_asus_iqiyi.js > /logs/jd_asus_iqiyi.log 2>&1 | sed 's/^/ 【华硕iQiYi】/'; "
 16 1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_delCoupon.js > /logs/jd_delCoupon.log 2>&1 | sed 's/^/ 【优惠券删除】/'; "
 # 02:00 >>
 # 03:00 >>
