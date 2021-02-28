@@ -55,7 +55,7 @@
 11 8 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_syj.js > /logs/jd_syj.log 2>&1 | sed 's/^/ 【十元街】/'; "
 1 8,12,18 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bookshop.js > /logs/jd_bookshop.log 2>&1 | sed 's/^/ 【口袋书店】/'; "
 3 8,16 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_cash.js > /logs/jd_cash.log 2>&1 | sed 's/^/ 【京东领现金】/'; "
-13 8 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_fanslove.js > /logs/jd_fanslove.log 2>&1 | sed 's/^/ 【粉丝互动】/'; "
+30 8,13,19 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_cfd.js > /logs/jd_cfd.log 2>&1 | sed 's/^/ 【财富岛】/'; "
 # 09:00 >>
 10 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bean_change.js > /logs/jd_bean_change.log 2>&1 | sed 's/^/ 【京豆变动通知】/'; "
 19 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_jump-jump.js > /logs/jd_jump-jump.log 2>&1 | sed 's/^/ 【母婴跳一跳】/'; "
