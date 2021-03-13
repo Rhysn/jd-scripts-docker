@@ -61,6 +61,7 @@
 #3 9,12,18 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_jxnc.js > /logs/jd_jxnc.log 2>&1 | sed 's/^/ 【京喜农场】/'; "
 0 9,12,20,21,23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_global.js > /logs/jd_global.log 2>&1 | sed 's/^/ 【京东国际环球挑战赛】/'; "
 # 10:00 >>
+40 10 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/z_wish.js > /logs/z_wish.log 2>&1 | sed 's/^/ 【京东众筹许愿池】/'; "
 # 11:00 >>
 45 11,22 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_entertainment.js > /logs/jd_entertainment.log 2>&1 | sed 's/^/ 【百变大咖秀】/'; "
 10-15/5 11 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_live.js > /logs/jd_live.log 2>&1 | sed 's/^/ 【京东直播任务】/'; "
