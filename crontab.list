@@ -25,7 +25,7 @@
 8 0,20 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_necklace.js > /logs/jd_necklace.log 2>&1 | sed 's/^/ 【点点券】/'; "
 1-59/23 0,5 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_bean_sign.js > /logs/jd_bean_sign.log 2>&1 | sed 's/^/ 【京豆签到脚本】/'; "
 5 0,7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_club_lottery.js > /logs/jd_club_lottery.log 2>&1 | sed 's/^/ 【摇京豆脚本】/'; "
-0 0,15 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_sxj.js > /logs/jd_sxj.log 2>&1 | sed 's/^/ 【手机尚学季】/'; "
+0,42 0 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_sxj.js > /logs/jd_sxj.log 2>&1 | sed 's/^/ 【手机尚学季】/'; "
 # 01:00 >>
 1 1,4 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_redPacket.js > /logs/jd_redPacket.log 2>&1 | sed 's/^/ 【全民开红包脚本】/'; "
 16 1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_delCoupon.js > /logs/jd_delCoupon.log 2>&1 | sed 's/^/ 【优惠券删除】/'; "
