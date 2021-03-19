@@ -14,6 +14,7 @@
 8 */3 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_speed.js > /logs/jd_speed.log 2>&1 | sed 's/^/ 【天天加速】/'; "
 7-47/20 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_dreamFactory.js > /logs/jd_dreamFactory.log 2>&1 | sed 's/^/ 【京喜工厂】/'; "
 0,7 6-18/6,23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_fruit.js > /logs/jd_fruit.log 2>&1 | sed 's/^/ 【东东农场】/'; "
+0 0,1-23/3 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_mohe.js > /logs/jd_mohe.log 2>&1 | sed 's/^/ 【5G魔盒】/'; "
 #2-47/15 * * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_price.js > /logs/jd_price.log 2>&1 | sed 's/^/ 【价格保护】/'; "
 # 00:00 >>
 11 0,8,13,19 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_cfd.js > /logs/jd_cfd.log 2>&1 | sed 's/^/ 【财富岛】/'; "
