@@ -50,7 +50,7 @@
 35 6-20/7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_beauty.js > /logs/jd_beauty.log 2>&1 | sed 's/^/ 【美丽研究院】/'; "
 # 07:00 >>
 6-51/15 7-23/1 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_plantBean.js > /logs/jd_plantBean.log 2>&1 | sed 's/^/ 【种豆得豆】/'; "
-5 7,12,23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_global_mh.js > /logs/jd_global_mh.log 2>&1 | sed 's/^/ 【国际盲盒】/'; "
+#5 7,12,23 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_global_mh.js > /logs/jd_global_mh.log 2>&1 | sed 's/^/ 【国际盲盒】/'; "
 10 7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_ms.js > /logs/jd_ms.log 2>&1 | sed 's/^/ 【京东秒秒币】/'; "
 31 7 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_bean_home.js > /logs/jd_bean_home.log 2>&1 | sed 's/^/ 【任务京豆】/'; "
 13 7,9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_crazy_joy.js > /logs/jd_crazy_joy.log 2>&1 | sed 's/^/ 【疯狂Joy】/';  "
@@ -65,7 +65,7 @@
 # 09:00 >>
 10 9 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_bean_change.js > /logs/jd_bean_change.log 2>&1 | sed 's/^/ 【京豆变动通知】/'; "
 #3 9,12,18 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_jxnc.js > /logs/jd_jxnc.log 2>&1 | sed 's/^/ 【京喜农场】/'; "
-46 9,22 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_global.js > /logs/jd_global.log 2>&1 | sed 's/^/ 【京东国际环球挑战赛】/'; "
+#46 9,22 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_global.js > /logs/jd_global.log 2>&1 | sed 's/^/ 【京东国际环球挑战赛】/'; "
 # 10:00 >>
 10 10,11 * * 2-5 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_entertainment.js > /logs/jd_entertainment.log 2>&1 | sed 's/^/ 【百变大咖秀】/'; "
 #33 10 * * * bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/z_xmf.js > /logs/jd_xmf.log 2>&1 | sed 's/^/ 【京东小魔方】/'; "
