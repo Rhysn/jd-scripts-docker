@@ -12,7 +12,7 @@ for item in "$@"; do
         sharecodes2="${sharecode}"
     else
         sharecodes="${sharecodes}@${sharecode}"
-        sharecodes2="${sharecodes}&${sharecode}"
+        sharecodes2="${sharecodes2}&${sharecode}"
     fi
     let num+=1
 done
