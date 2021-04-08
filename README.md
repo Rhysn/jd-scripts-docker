@@ -16,7 +16,7 @@
 git docker docker-compose
 ### 下载
 ```sh
-git clone https://github.com/chinnkarahoi/jd-scripts-docker
+git clone https://gitee.com/rhysn/jd-scripts-docker 
 cd jd-scripts-docker
 ```
 ### 获取cookie
@@ -44,7 +44,7 @@ docker-compose up --build --force-recreate --detach jd1
 签到测试
 
 ```sh
-docker exec jd1 bash -c 'exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; source /cookies; node /scripts/jd_bean_sign.js > /logs/jd_bean_sign.log'
+docker exec jd1 bash -c "exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /jd-scripts-docker/env/sharecode; source /all; source /env; source /cookies; node /scripts/jd_bean_sign.js > /logs/jd_bean_sign.log 2>&1 | sed 's/^/ 【京豆签到脚本】/'; "
 ```
 
 查看 `logs/logs1/jd_bean_sign.log` 确认可以签到等操作后，即可每天定时执行脚本。
