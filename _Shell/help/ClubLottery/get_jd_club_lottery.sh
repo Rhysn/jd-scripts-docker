@@ -5,9 +5,9 @@ sharecodes=""
 sharecodes2=""
 for item in "$@"; do
     path="../../../logs/logs${item}/jd_club_lottery.log"
-    sharecode=$(cat ${path} | grep '助力任务好友邀请码：' | sed '助力任务好友邀请码：//g')
-    encryptAssignmentId=$(cat ${path} | grep '助力任务好友encryptAssignmentId：' | sed '助力任务好友encryptAssignmentId：//g')
-    assignmentType=$(cat ${path} | grep '助力任务好友assignmentType：' | sed '助力任务好友assignmentType：//g')
+    sharecode=$(cat ${path} | grep '助力任务好友邀请码：' | sed 's/助力任务好友邀请码：//g')
+    encryptAssignmentId=$(cat ${path} | grep '助力任务好友encryptAssignmentId：' | sed 's/助力任务好友encryptAssignmentId：//g')
+    assignmentType=$(cat ${path} | grep '助力任务好友assignmentType：' | sed 's/助力任务好友assignmentType：//g')
 
     temp="{\"encryptAssignmentId\": \"${encryptAssignmentId}\",\"assignmentType\": ${assignmentType},\"itemId\": \"${sharecode}\"}"
 
